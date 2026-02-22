@@ -48,3 +48,4 @@ By taking turns, each player may ask questions about each other's character and 
 * authentication system
 * mobile responsive design
 * database management
+* cuter design
