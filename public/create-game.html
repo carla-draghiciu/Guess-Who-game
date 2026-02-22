@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create Game</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/create-game.css">
+</head>
+
+<body>
+
+
+  <div class="game-container">
+    <div class="left-part">
+      <p class="game-code">Game code: ...</p>
+
+      <div class="players-table">
+        <div class="players-header">Players joined</div>
+        <div class="players-joined"></div>
+      </div>
+
+      <input class="player-name" placeholder="enter name">
+      <button class="start-button">Start game</button>
+    </div>
+
+    <div class="game-grid"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts/create-game.js"></script>
+</body>
+
+</html>

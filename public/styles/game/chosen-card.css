@@ -1,0 +1,56 @@
+.chosen-card {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.chosen-card-title {
+  font-family: Work Sans;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(52, 51, 51);
+}
+
+.character2 {
+  height: 200px;
+  width: 160px;
+  display: block;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  border: none;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.character-image2 {
+  height: 200px;
+  width: 160px;
+
+  /* display: block; */
+  /* cursor: pointer;  */
+  border-radius: 20px;
+  object-fit: cover;
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.name-input2 {
+  margin-top: 5px;
+  width: 160px;
+  border-radius: 7px;
+  border: none;
+  background-color: #eee1d3;
+  color: #685848;
+  font-family: Work Sans;
+  font-size: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.name-input2:focus {
+  outline: none;
+}
+

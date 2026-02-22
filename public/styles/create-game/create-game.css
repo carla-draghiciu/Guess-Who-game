@@ -1,0 +1,75 @@
+body {
+  font-family: Work Sans;
+  height: 100vh;
+  width:100vw;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+
+.left-part {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-code {
+  width: fit-content;
+  color: #FF8040;
+  text-shadow: 3px 0 #060771, -3px 0 #060771, 0 3px #060771, 0 -3px #060771,
+               2px 2px #060771, -2px -2px #060771, 2px -2px #060771, -2px 2px #060771;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.game-create-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player-name {
+  margin-top: 60px;
+  display: block;
+  height: 40px;
+  width: 360px;
+  padding: 5px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #fbf8e6;
+  color: #b3a18e;
+  font-family: Work Sans;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.player-name:focus {
+  outline: 2px solid #b3a18e;
+}
+
+.start-button {
+  margin-top: 10px;
+  background-color: #031a9b;
+  color: #fca579;
+  border: 3px solid #dccfc6;
+  height: 70px;
+  width: 400px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 40px;
+  font-family: Work Sans;
+  box-shadow: 0px 0px 10px #060771;
+  transition: opacity 0.15s, font-size 0.15s, background-color 0.15s;
+}
+
+.start-button:hover {
+  opacity: 0.8;
+  font-size: 35px;
+}
+
+.start-button:active {
+  opacity: 1;
+  background-color: #060771;
+  font-size: 40px;
+}

@@ -1,0 +1,124 @@
+.chatbox {
+  width: 30vw;
+  height: 95vh;
+  background-color: #e6d3bf;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+}
+
+.chat-header {
+  font-size: 30px;
+  font-weight: bold;
+  align-content: center;
+  height: 70px;
+  background-color: #f6ede3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 0px 30px;
+  /* color: #C66E52; */
+  color: #FF8040;
+  text-shadow: 3px 0 #060771, -3px 0 #060771, 0 3px #060771, 0 -3px #060771,
+               2px 2px #060771, -2px -2px #060771, 2px -2px #060771, -2px 2px #060771;
+}
+
+
+
+.chat-messages:hover {
+  scrollbar-color: #C66E52 #cd8068;
+}
+
+.chat-input {
+  height: 40px;
+  width: 270px;
+  border-radius: 30px;
+  border: none;
+  padding: 0 20px;
+  font-family: Work Sans;
+  background-color: #f6ede3;
+  color: #947f66;
+}
+
+.chat-input:focus {
+  outline: none;
+}
+
+.chat-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.row1, .row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.send-button {
+  height: 40px;
+  width: 40px;
+  /* margin-left: 10px; */
+  border-radius: 50%;
+  border: none;
+  background-color: #f6ede3;
+  color: #e6d3bf;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #f5eadd;
+}
+
+.yes-button,
+.no-button {
+  margin-top: 10px;
+  background-color: #f6ede3;
+  color: #947f66;
+  height: 40px;
+  width: 180px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Work Sans;
+  transition: opacity 0.15s, font-size 0.15s, background-color 0.15s;
+}
+
+.yes-button:hover,
+.no-button:hover {
+  opacity: 0.8;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 10px;
+  overflow-y: auto;
+  height: 60vh;
+  background-color: #e6d3bf;
+  scrollbar-width: thin;
+}
+
+.chat-message.self {
+  align-self: flex-end;
+  background-color: #FF8040;
+  color: #f6ede3;
+}
+
+.chat-message.other {
+  align-self: flex-start;
+  background-color: #060771;
+  color: #f6ede3;
+}
+
+.chat-message {
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 70%;
+  word-wrap: break-word;
+}

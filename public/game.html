@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guess Who?</title>
+  <link rel="stylesheet" href="styles/game.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <div class="game-grid"></div>
+    <div class="chatbox">
+      <div class="chat-header">Carla</div>
+      <div class="chat-messages"></div>
+      <input type="text" class="chat-input" placeholder="Type your message...">
+      <button class="send-button">Send</button>
+      <button class="yes-button">Yes</button>
+      <button class="no-button">No</button>
+    </div>
+    <div class="chosen-card">
+      <p>Your character:</p>
+      <button class="character2">
+        <img class="character-image2" src="images/bieber.jpeg">
+      </button>
+
+      
+      <input class="file-input" type="file" id="fileInput" style="display: none;">
+      <input class="name-input2" value="Bieber" readonly>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts/game.js"></script>
+</body>
+
+</html>

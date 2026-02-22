@@ -1,0 +1,47 @@
+.players-table {
+  margin-top: 20px;
+  background-color: #cbad98;
+  color: #f5e8de;
+  height: 200px;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #060771;
+  /* border: 1px solid #ECD5BC; */
+  border: 5px solid #d0b5a2;
+}
+
+.players-header {
+  background-color: #dccfc6;
+  /* color: #FF8040; */
+  color: #060771;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  align-content: center;
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* border: 3px solid #031a9b; */
+  /* text-shadow: 2px 0 #060771, -2px 0 #060771, 0 2px #060771, 0 -2px #060771,
+               1px 1px #060771, -1px -1px #060771, 1px -1px #060771, -1px 1px #060771; */
+}
+
+.players-joined {
+  flex: 1;
+  overflow-y: scroll;
+  height: 145px;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  /* transition: scrollbar-color 0.3s; */
+  scroll-behavior: smooth;
+}
+
+.players-joined:hover {
+  scrollbar-color: #cbad98 #d0b5a2;
+}
+
+.joiner {
+  margin-left: 20px;
+  /* font-weight: bold; */
+  font-size: 18px;
+}

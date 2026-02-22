@@ -1,0 +1,38 @@
+.create-character-image {
+  height: 80px;
+  width: 70px;
+  display: block;
+  cursor: pointer;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.create-name-input {
+  margin-top: 5px;
+  width: 66px;
+  border-radius: 7px;
+  border: none;
+  background-color: #eee1d3;
+  color: #685848;
+  font-family: Work Sans;
+  font-size: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.create-name-input:focus {
+  outline: 2px solid #b3a18e;
+  color: #313b3f;
+}
+
+.game-create-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 20px;
+  width: 50vw;
+  margin-left: 40px;
+}/* 
+@media (max-width: 1200px) {
+  .game-grid{grid-template-columns: repeat(4, 1fr);}
+} */

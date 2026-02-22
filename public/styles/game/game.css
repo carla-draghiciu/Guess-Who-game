@@ -1,0 +1,54 @@
+body {
+  font-family: Work Sans;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* 
+@media (max-width: 1200px) {
+  .game-grid{grid-template-columns: repeat(4, 1fr);}
+} */
+
+.game-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* 
+.chat-messages {
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  overflow-y: auto;
+  background-color: #C66E52;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s;
+} */
+
+/* .chat-message.self {
+  background-color: #ca7f69;
+  color: black;
+  align-self: flex-end;
+}
+
+.chat-message.other {
+  background-color: #E9B63B;
+  color: black;
+  align-self: flex-start;
+}
+
+.chat-message.self,
+.chat-message.other {
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 70%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+} */

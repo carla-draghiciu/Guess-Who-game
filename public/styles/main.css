@@ -1,0 +1,68 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+body {
+  background-image: url("imag.png");
+  color: #D7B377;
+  font-family: Work Sans;
+}
+
+.title {
+  font-size: 12vw;
+  text-align: center;
+  color: #FF8040;
+  align-content:end;
+  text-shadow: 5px 0 #060771, -5px 0 #060771, 0 5px #060771, 0 -5px #060771,
+               4px 4px #060771, -4px -4px #060771, 4px -4px #060771, -4px 4px #060771;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 100px;
+  }
+}
+
+.join-button,
+.create-button {
+  background-color: #031a9b;
+  color: #fca579;
+  border: 3px solid #dccfc6;
+  height: 70px;
+  width: 400px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 35px;
+  font-family: Work Sans;
+  box-shadow: 0px 0px 10px #060771;
+  transition: opacity 0.15s, font-size 0.15s, background-color 0.15s;
+}
+
+@media screen and (max-width: 600px) {
+  .join-button, .create-button {
+    width: 300px;
+    font-size: 30px;
+  }
+
+.join-button:hover,
+.create-button:hover {
+  font-size: 35px;
+}
+}
+
+.join-button:hover,
+.create-button:hover {
+  opacity: 0.8;
+  font-size: 40px;
+}
+
+.join-button:active,
+.create-button:active {
+  opacity: 1;
+  background-color: #060771;
+  font-size: 40px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guess Who?</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/join-game.css">
+  <link rel="stylesheet" href="styles/create-game/create-game.css">
+  <link rel="stylesheet" href="styles/create-game/game-grid.css">
+  <link rel="stylesheet" href="styles/create-game/players-table.css">
+  <link rel="stylesheet" href="styles/game/game.css">
+  <link rel="stylesheet" href="styles/game/chatbox.css">
+  <link rel="stylesheet" href="styles/game/game-grid.css">
+  <link rel="stylesheet" href="styles/game/chosen-card.css">
+</head>
+
+<body>
+  <div id="home-screen" class="screen">
+    <div class="intro">
+      <div class="title">Guess Who?</div>
+
+      <button class="join-button">Join game</button>
+
+      <button class="create-button">Create game</button>
+
+    </div>
+  </div>
+
+  <div id="join-screen" style="display: none;" class="screen">
+    <div class="join-container">
+      <div class="title">Join Game</div>
+      <input class="code-input" placeholder="enter code">
+      <input class="name-input" placeholder="enter name">
+      <button class="confirm-join-button">Join game</button>
+    </div>
+  </div>
+
+  <div id="create-screen" style="display: none;" class="screen">
+    <div class="game-create-container">
+      <div class="left-part">
+        <p class="game-code">Game code: ...</p>
+
+        <div class="players-table">
+          <div class="players-header">Players joined</div>
+          <div class="players-joined"></div>
+        </div>
+
+        <input class="player-name" placeholder="enter name">
+        <button class="start-button">Start game</button>
+      </div>
+
+      <div class="game-create-grid"></div>
+    </div>
+  </div>
+
+  <div id="game-screen" style="display: none;" class="screen">
+    <div class="game-container">
+      <div class="game-grid"></div>
+      <div class="chatbox">
+        <div class="chat-header">Carla</div>
+        <div class="chat-messages">
+          <!-- <div class="chat-message self">Hey wyd</div>
+          <div class="chat-message other">byeee</div> -->
+        </div>
+        <div class="chat-footer">
+          <div class="row1">
+            <input type="text" class="chat-input" placeholder="Type your message...">
+            <button class="send-button">></button>
+          </div>
+          <div class="row2">
+            <button class="yes-button">Yes</button>
+            <button class="no-button">No</button>
+          </div>
+        </div>
+      </div>
+      <div class="chosen-card">
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts/main.js"></script>
+  <script type="module" src="scripts/cards.js"></script>
+  <script type="module" src="scripts/join-game.js"></script>
+  <script type="module" src="scripts/create-game.js"></script>
+  <script type="module" src="scripts/game.js"></script>
+</body>
+
+</html>

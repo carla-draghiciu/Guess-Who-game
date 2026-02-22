@@ -1,0 +1,72 @@
+.join-container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.code-input {
+  margin-top: 10vh;
+}
+
+.code-input,
+.name-input {
+  margin-bottom: 10px;
+  display: block;
+  height: 40px;
+  width: 360px;
+  padding: 5px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #fbf8e6;
+  color: #b3a18e;
+  font-family: Work Sans;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.code-input:focus,
+.name-input:focus {
+  outline: 2px solid #b3a18e;
+}
+
+.confirm-join-button {
+  background-color: #031a9b;
+  color: #fca579;
+  border: 3px solid #dccfc6;
+  height: 70px;
+  width: 400px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 40px;
+  font-family: Work Sans;
+  box-shadow: 0px 0px 10px #060771;
+  transition: opacity 0.15s, font-size 0.15s, background-color 0.15s;
+}
+
+.confirm-join-button:hover {
+  opacity: 0.8;
+  font-size: 42px;
+}
+
+.confirm-join-button:active {
+  opacity: 1;
+  background-color: #060771;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 520px) {
+  .code-input,
+  .name-input {
+    width: 300px;
+  }
+
+  .confirm-join-button {
+    width: 340px;
+  }
+
+  .code-input {
+    margin-top: 5vh;
+  }
+}
